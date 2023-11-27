@@ -101,6 +101,8 @@ export default function ListaAvaliacoes({ navigation, route }) {
                     avaliacao: item,
                   })
                 }
+                style={{ backgroundColor: 'yellow' }}
+                labelStyle={{ color: 'black' }}
               >
                 Editar
               </Button>
@@ -109,6 +111,8 @@ export default function ListaAvaliacoes({ navigation, route }) {
                   setAvaliacaoASerExcluida(item);
                   showModal();
                 }}
+                style={{ backgroundColor: 'yellow' }}
+                labelStyle={{ color: 'black' }}
               >
                 Excluir
               </Button>
@@ -150,6 +154,7 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: "center",
     alignItems: "center",
+    backgroundColor: '#FFF9C4'
   },
   title: {
     fontWeight: "bold",
@@ -169,7 +174,7 @@ const styles = StyleSheet.create({
   },
   cardContent: {
     flexDirection: "row",
-    backgroundColor: MD3Colors.primary80,
+    backgroundColor: 'white',
     borderWidth: 2,
     borderTopLeftRadius: 10,
     borderTopRightRadius: 10,

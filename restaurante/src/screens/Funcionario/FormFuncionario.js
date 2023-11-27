@@ -221,6 +221,7 @@ export default function FormFuncionario({ navigation, route }) {
                 style={styles.input}
                 mode="outlined"
                 label="Salário"
+                keyboardType="numeric"
                 value={values.salario}
                 onChangeText={handleChange("salario")}
                 onBlur={handleBlur("salario")}

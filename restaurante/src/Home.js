@@ -20,6 +20,8 @@ export default function Home({ navigation }) {
         <CustomButton onPress={() => handleNavigation('Cardápio')} text="Cardápio" />
         <CustomButton onPress={() => handleNavigation('Avaliações')} text="Avaliações" />
       </View>
+
+      <Text style={styles.headerDescription}>Agradecemos a sua preferência por este estabelecimento!</Text>
     </View>
   );
 }
@@ -33,7 +35,7 @@ const CustomButton = ({ onPress, text }) => (
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#FFF9C4', 
+    backgroundColor: 'red', 
     paddingHorizontal: 20,
     alignItems: 'center',
     justifyContent: 'center',
@@ -45,13 +47,13 @@ const styles = StyleSheet.create({
   headerTitle: {
     fontSize: 36,
     fontWeight: 'bold',
-    color: '#FF9800', 
+    color: 'yellow', 
     marginBottom: 10,
     textAlign: 'center', 
   },
   headerDescription: {
     fontSize: 20,
-    color: '#FFB74D', 
+    color: 'black', 
     textAlign: 'center',
   },
   buttonsContainer: {
@@ -61,9 +63,8 @@ const styles = StyleSheet.create({
   button: {
     width: '70%',
     paddingVertical: 15,
-    borderRadius: 15,
     marginBottom: 25,
-    backgroundColor: '#FF9800', 
+    backgroundColor: 'yellow', 
     alignItems: 'center',
     justifyContent: 'center',
     elevation: 25, 
@@ -75,7 +76,7 @@ const styles = StyleSheet.create({
     },
   },
   buttonText: {
-    color: '#fff',
+    color: 'black',
     fontSize: 18,
   },
 });

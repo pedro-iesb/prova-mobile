@@ -89,7 +89,6 @@ export default function ListaUsuarios({ navigation, route }) {
               <View style={{ flex: 1 }}>
                 <Text variant="titleMedium">Nome: {item?.nome}</Text>
                 <Text variant="titleMedium">Sobrenome: {item?.sobrenome}</Text>
-                <Text variant="bodyLarge">Idade: {item?.idade}</Text>
                 <Text variant="bodyLarge">CPF: {item?.cpf}</Text>
                 <Text variant="bodyLarge">Telefone: {item.telefone}</Text>
                 <Text variant="bodyLarge">E-mail: {item.email}</Text>
@@ -103,6 +102,8 @@ export default function ListaUsuarios({ navigation, route }) {
                     usuario: item,
                   })
                 }
+                style={{ backgroundColor: 'yellow' }}
+                labelStyle={{ color: 'black' }}
               >
                 Editar
               </Button>
@@ -111,6 +112,8 @@ export default function ListaUsuarios({ navigation, route }) {
                   setUsuarioASerExcluido(item);
                   showModal();
                 }}
+                style={{ backgroundColor: 'yellow' }}
+                labelStyle={{ color: 'black' }}
               >
                 Excluir
               </Button>
@@ -152,6 +155,7 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: "center",
     alignItems: "center",
+    backgroundColor: '#FFF9C4'
   },
   title: {
     fontWeight: "bold",
@@ -168,10 +172,11 @@ const styles = StyleSheet.create({
   },
   card: {
     marginTop: 15,
+    backgroundColor: 'white', // Cor de fundo branca para os cards
   },
   cardContent: {
     flexDirection: "row",
-    backgroundColor: MD3Colors.primary80,
+    backgroundColor: 'white',
     borderWidth: 2,
     borderTopLeftRadius: 10,
     borderTopRightRadius: 10,

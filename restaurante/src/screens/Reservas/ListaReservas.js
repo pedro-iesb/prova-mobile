@@ -102,6 +102,8 @@ export default function ListaReservas({ navigation, route }) {
                     reserva: item,
                   })
                 }
+                style={{ backgroundColor: 'yellow' }}
+                labelStyle={{ color: 'black' }}
               >
                 Editar
               </Button>
@@ -110,6 +112,8 @@ export default function ListaReservas({ navigation, route }) {
                   setReservaASerExcluida(item);
                   showModal();
                 }}
+                style={{ backgroundColor: 'yellow' }}
+                labelStyle={{ color: 'black' }}
               >
                 Excluir
               </Button>
@@ -151,6 +155,7 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: "center",
     alignItems: "center",
+    backgroundColor: '#FFF9C4'
   },
   title: {
     fontWeight: "bold",
@@ -170,7 +175,7 @@ const styles = StyleSheet.create({
   },
   cardContent: {
     flexDirection: "row",
-    backgroundColor: MD3Colors.primary80,
+    backgroundColor: 'white',
     borderWidth: 2,
     borderTopLeftRadius: 10,
     borderTopRightRadius: 10,
